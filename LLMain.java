@@ -13,32 +13,35 @@ public class LLMain {
     static Doubly doubly = new Doubly();
     static LinkedList<Hotel> llc = new LinkedList<>(); 
     
-    public static void main(String[] args) {
+    public void LLMain(){
         
         int loop = 0, loop1 = 0;
         
-        System.out.println("LINKED LIST");
-        
          while(loop == 0){
             System.out.println("""
+                              
                              Press: 
                              [1] Singly Linked List
                              [2] Doubly Linked List
                              [3] Linked List Class
-                             [4] Back to Main Menu """);
+                             [4] Back to Main Menu 
+                               
+                               """);
             System.out.print("Enter Choice:   ");
             int ch = sc.nextInt();
-            System.out.println("");
             
             switch (ch) {
                 case 1:
                     while(loop1 == 0){
                         System.out.println("""
+                                           
                                             Press
                                             [1] Add Reservation
                                             [2] Display All Reservation
                                             [3] Delete Reservation
-                                            [4] LinkedList Menu    """);
+                                            [4] LinkedList Menu    
+                                           
+                                           """);
                         System.out.print("Enter Choice:   ");
                         int ch1 = sc.nextInt();
                         
@@ -68,14 +71,18 @@ public class LLMain {
                         }
                     }       break;
                 case 2:
+                    loop1 = 0;
                     while(loop1 == 0){
                         System.out.println("""
+                                           
                                             Press:
                                             [1] to Add Reservation
                                             [2] Display All Reservation
                                             [3] Display All Reservation Backwards
                                             [4] Delete Reservation
-                                            [5] LinkedList Menu    """);
+                                            [5] LinkedList Menu    
+                                           
+                                           """);
                         System.out.print("Enter Choice:   ");
                         int ch2 = sc.nextInt();
                         
@@ -107,36 +114,43 @@ public class LLMain {
                         }
                     }       break;
                 case 3:
+                    loop1 = 0;
                     while (loop1 == 0) {
                         System.out.println("""
+                                           
                                             Press
                                             [1] Add Reservation in the Beginning
                                             [2] Add Reservation in the End
                                             [3] Display All Reservations
-                                            [4] LinkedList Menu """);
+                                            [4] LinkedList Menu 
+                                           
+                                           """);
                         System.out.print("Enter Choice:   ");
                         int ch3 = sc.nextInt();
                         
-                        Hotel roomdata = RoomData();
+                        
                         
                         switch (ch3) {
                             case 1:
-                                
+                                Hotel roomdata = RoomData();
                                 llc.addFirst(roomdata);
                                 roomdata.hotelDisplay();
                                 System.out.println("");
                                 break;
                             case 2:
-                                llc.addLast(roomdata);
-                                roomdata.hotelDisplay();
-                                System.out.println("");
+                                Hotel roomData = RoomData();
+                                llc.addLast(roomData);  
+                                roomData.hotelDisplay();
+                                System.out.println();
+                                break;
+
                             case 3:
                                 System.out.println("Reservation Information");
                                 if (llc.isEmpty()) {
                                     System.out.println("No reservations available.");
                                 } else {
-                                    for (Hotel hotel : llc) {
-                                        hotel.hotelDisplay();
+                                    for (Hotel room : llc) {
+                                        room.hotelDisplay();
                                     }
                                 }
                                 break;
@@ -149,6 +163,8 @@ public class LLMain {
                     }       break;
             //main menu
                 case 4:
+                    loop++;
+                    loop1++;
                     break;
                 default:
                     System.out.println("Invalid Choice. Enter Valid Option");

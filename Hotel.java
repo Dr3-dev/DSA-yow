@@ -26,6 +26,5 @@ public class Hotel {
       System.out.println("Price: " + PRICE);
       System.out.println("Book Status: " + BOOKST);
       System.out.println("");
-
   }
 }
