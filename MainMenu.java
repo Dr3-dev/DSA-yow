@@ -132,7 +132,7 @@ public class MainMenu {
                 break;
             case 4:
                 System.out.println("""
-                                            Gleizel Galvez contributed 
+                                                Gleizel Galvez contributed 
                                    to the development of the Search and Sorting Algorithms.""");
                 break;
             case 5:
