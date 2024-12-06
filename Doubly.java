@@ -7,7 +7,6 @@ public class Doubly {
         Node next;
         Node prev;
 
-        // Constructor
         Node(Hotel hotel) {
             this.hotel = hotel;
             this.next = null;
@@ -79,24 +78,21 @@ public class Doubly {
         }
         Node temp = head;
         // If the node to be deleted is the head
-        if (head.hotel.RMNO == rmno) {
+        if (head.hotel.getRoomNum() == rmno) {
             head = head.next; 
             System.out.println("Room " + rmno + " has been successfully deleted.");
             return true;
         }
         
-        while (temp.next != null && temp.next.hotel.RMNO != rmno) {
+        while (temp.next != null && temp.next.hotel.getRoomNum() != rmno) {
             temp = temp.next;
         }
         
-        // If room is found and deleted
-        if (temp.next != null) {
-            temp.next = temp.next.next;
-            System.out.println("Room " + rmno + " has been successfully deleted.");
-            return false;
+        if (temp.next == null) {
+            System.out.println("Element not found");
+        } else {
+        temp.next = temp.next.next;
         }
-        System.out.println("Room Not Found.");
         return false;
     }
 }
-
