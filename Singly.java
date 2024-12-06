@@ -55,13 +55,14 @@ public class Singly {
         return;
         }
         // If the node to be deleted is the head
-        if (head.hotel.RMNO == rmno) {
+        if (head.hotel.getRoomNum() == rmno) {
             head = head.next;
+            System.out.println("Room " + rmno + " has been successfully deleted.");
             return;
         }
         Node temp = head;
         
-        while (temp.next != null && temp.next.hotel.RMNO != rmno) {
+        while (temp.next != null && temp.next.hotel.getRoomNum() != rmno) {
             temp = temp.next;
         }
         
@@ -70,16 +71,5 @@ public class Singly {
         } else {
         temp.next = temp.next.next;
         }
-        
-    // If room is found and deleted    
-        if (temp.next != null) {
-            temp.next = temp.next.next;
-            System.out.println("Room " + rmno + " has been successfully deleted.");
-            return;
-        }
-        System.out.println("Room Not Found.");
     }    
 }
-
-
-   
