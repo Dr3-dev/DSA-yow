@@ -5,16 +5,17 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class LLMain {
+    
     static Scanner sc = new Scanner (System.in);
     static int rid;
     static String desc, type, status;
     static double price;
-    static Singly singly = new Singly();
-    static Doubly doubly = new Doubly();
-    static LinkedList<Hotel> llc = new LinkedList<>(); 
-    
+   
     public void LLMain(){
         
+        Singly singly = new Singly();
+        Doubly doubly = new Doubly();
+        LinkedList<Hotel> llc = new LinkedList<>(); 
         int loop = 0, loop1 = 0;
         
          while(loop == 0){
@@ -31,7 +32,8 @@ public class LLMain {
             int ch = sc.nextInt();
             
             switch (ch) {
-                case 1:
+                case 1: //singly LL
+                    loop1 = 0;
                     while(loop1 == 0){
                         System.out.println("""
                                            
@@ -43,15 +45,14 @@ public class LLMain {
                                            
                                            """);
                         System.out.print("Enter Choice:   ");
-                        int ch1 = sc.nextInt();
-                        
+                        int ch1 = sc.nextInt();     
                         
                         switch (ch1) {
                             case 1:
                                 Hotel roomdata = RoomData();
                                 System.out.println("=========================");
                                 System.out.println("Room Data:");
-                                singly.insert(rid, desc, type, price, desc);
+                                singly.insert(rid, desc, type, price, status);
                                 roomdata.hotelDisplay();
                                 break;
                             case 2:
@@ -68,15 +69,16 @@ public class LLMain {
                                 break;
                             default:
                                 System.out.println("Invalid Choice. Enter Valid Option.");
+                                break;
                         }
-                    }       break;
-                case 2:
+                    }       
+                case 2: //doubly LL
                     loop1 = 0;
                     while(loop1 == 0){
                         System.out.println("""
                                            
                                             Press:
-                                            [1] to Add Reservation
+                                            [1] Add Reservation
                                             [2] Display All Reservation
                                             [3] Display All Reservation Backwards
                                             [4] Delete Reservation
@@ -89,7 +91,7 @@ public class LLMain {
                         switch (ch2) {
                             case 1:
                                 Hotel roomdata = RoomData();
-                                doubly.addRoom(rid, desc, type, price, desc);
+                                doubly.addRoom(rid, desc, type, price, status);
                                 roomdata.hotelDisplay();
                                 System.out.println("");
                                 break;
@@ -110,10 +112,12 @@ public class LLMain {
                                 loop1++;
                                 break;
                             default:
-                                System.out.println("Invalid Choice. Enter Valid Option");
+                                System.out.println("Invalid Choice. Enter Valid Option"); 
+                                break;
                         }
-                    }       break;
-                case 3:
+                    }
+                    
+                case 3: //LL class in java 
                     loop1 = 0;
                     while (loop1 == 0) {
                         System.out.println("""
@@ -127,8 +131,6 @@ public class LLMain {
                                            """);
                         System.out.print("Enter Choice:   ");
                         int ch3 = sc.nextInt();
-                        
-                        
                         
                         switch (ch3) {
                             case 1:
