@@ -33,7 +33,6 @@ public class LLMain {
             
             switch (ch) {
                 case 1: //singly LL
-                    loop1 = 0;
                     while(loop1 == 0){
                         System.out.println("""
                                            
@@ -73,7 +72,6 @@ public class LLMain {
                         }
                     }       
                 case 2: //doubly LL
-                    loop1 = 0;
                     while(loop1 == 0){
                         System.out.println("""
                                            
@@ -118,7 +116,6 @@ public class LLMain {
                     }
                     
                 case 3: //LL class in java 
-                    loop1 = 0;
                     while (loop1 == 0) {
                         System.out.println("""
                                            
@@ -172,6 +169,7 @@ public class LLMain {
                     System.out.println("Invalid Choice. Enter Valid Option");
                     break;      
             }
+             loop1 = 0;
         }
     }
     public static Hotel RoomData(){
