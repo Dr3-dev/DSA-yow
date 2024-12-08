@@ -66,11 +66,4 @@ public class ArrayRoomQueue {
     System.out.println();
     }
     
-	public void display() {
-		System.out.println(" Room Number: " + RMNO +
-		                   "\n Description: " + RMDESC + "\n Type: " + RMTYPE +
-		                   "\n Price: " + PRICE);
-		System.out.println("---------------------------------");
-
-	}
 }
