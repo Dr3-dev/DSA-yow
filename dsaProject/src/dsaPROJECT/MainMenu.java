@@ -59,8 +59,7 @@ public class MainMenu {
                     SearchSortMain.main();
                     break;
                 case 6:
-                    //HASH TABLE
-                    //wala pa
+                    HashMapMain.main();
                     break;
                 case 7:
                     Members members = new Members();
