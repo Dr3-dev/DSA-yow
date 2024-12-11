@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class HashMapMain {
-    public static void main(String[] args) {
+    public static void main() {
         Scanner sc = new Scanner(System.in);
         HashMap<Integer, String> rooms = new HashMap<>();
         HashMap<String, String> hashMapDemo = new HashMap<>();
