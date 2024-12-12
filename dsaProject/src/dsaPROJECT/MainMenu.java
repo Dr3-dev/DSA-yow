@@ -6,7 +6,7 @@ public class MainMenu {
     static Scanner sc = new Scanner (System.in);
     public static void main(String[] args) {
         
-
+    	
     int lp = 0, lp1 = 0;
     String uname = "admin";
     String pword = "admin123";
@@ -20,7 +20,10 @@ public class MainMenu {
         if (username.equals(uname)&& password.equals(pword)) {
         while(lp1 == 0){
             System.out.println("""
-                               
+                            ==================================
+                               Data Structures & Algorithms
+                                    (Hotel & Tourism)
+                            ==================================
                             MAIN MENU                      
                             Press: 
                             [1] Array & Pointers
@@ -31,8 +34,7 @@ public class MainMenu {
                             [6] Hash Tables
                             [7] Group Members
                             [0] Log-Out
-                               
-                               """);
+                            ==================================""");
             System.out.print("Enter Choice:   ");
             int choice = sc.nextInt();
             
@@ -59,7 +61,9 @@ public class MainMenu {
                     SearchSortMain.main();
                     break;
                 case 6:
-                    HashMapMain.main();
+                    //wala pa
+                	//wala pa
+                	//wala pa
                     break;
                 case 7:
                     Members members = new Members();

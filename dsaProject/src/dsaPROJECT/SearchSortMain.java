@@ -1,7 +1,7 @@
 package dsaPROJECT;
 
 import java.util.Scanner;
-
+//========================================================================================================
 public class SearchSortMain {
     public static void main() {
         Scanner input = new Scanner(System.in);
@@ -181,6 +181,7 @@ public class SearchSortMain {
         return choice;
     }
 }
+//========================================================================================================
 abstract class SearchAlgorithms {
     private int[] rmNo;
     public void addRoom(Scanner input){
@@ -202,7 +203,7 @@ abstract class SearchAlgorithms {
     
     public abstract void findRoom(Scanner input);     
 }
-
+//========================================================================================================
 class LinearSearch extends SearchAlgorithms{
     @Override
     public void addRoom(Scanner input){
@@ -277,7 +278,7 @@ class LinearSearch extends SearchAlgorithms{
         } while (ans.equalsIgnoreCase("yes"));
     }
 }
-
+//========================================================================================================
 class BinarySearch extends SearchAlgorithms{
     @Override
     public void addRoom(Scanner input){
@@ -324,6 +325,7 @@ class BinarySearch extends SearchAlgorithms{
         }while(ans.equalsIgnoreCase("yes"));     
     }
 }
+//========================================================================================================
 class InterpolationSearch extends SearchAlgorithms {
     
     @Override
@@ -374,6 +376,7 @@ class InterpolationSearch extends SearchAlgorithms {
         }while(ans.equalsIgnoreCase("yes"));
     }
 }
+//========================================================================================================
 abstract class SortAlgorithms {
     private int[] rmNo;
     public void addRoom(Scanner input){
@@ -401,6 +404,7 @@ abstract class SortAlgorithms {
     }
     public abstract void sortRoom();
 }
+//========================================================================================================
 class BubbleSort extends SortAlgorithms {
     @Override
     public void addRoom(Scanner input){
@@ -454,6 +458,7 @@ class BubbleSort extends SortAlgorithms {
                System.out.println();
     }
 }
+//========================================================================================================
 class SelectionSort extends SortAlgorithms{
     @Override
     public void addRoom(Scanner input){
@@ -487,6 +492,7 @@ class SelectionSort extends SortAlgorithms{
                 System.out.println();
     }
 }
+//========================================================================================================
 class InsertionSort extends SortAlgorithms{
     @Override
     public void addRoom(Scanner input){
@@ -518,8 +524,4 @@ class InsertionSort extends SortAlgorithms{
             }   
             System.out.println();
     }
-    
-    
-    
-    
 }

@@ -1,6 +1,7 @@
 package dsaPROJECT;
 
 import java.util.Scanner;
+//========================================================================================================
 public class QueueMain {
 
 	public static void main() {
@@ -128,7 +129,7 @@ public class QueueMain {
 	}
 
 }
-
+//========================================================================================================
 class ArrayRoomQueue {
 	private int [] queue;
 	private int front;
@@ -199,6 +200,7 @@ class ArrayRoomQueue {
     }
     
 }
+//========================================================================================================
 class Node2 {
 	int data;
 	Node2 next;
@@ -208,7 +210,7 @@ class Node2 {
 		this.next = null;
 	}
 }
-
+//========================================================================================================
 class LLRoomQueue {
 	private Node2 front;
 	private Node2 rear;

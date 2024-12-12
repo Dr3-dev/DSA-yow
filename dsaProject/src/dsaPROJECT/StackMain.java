@@ -2,7 +2,7 @@ package dsaPROJECT;
 
 import java.util.Scanner;
 import java.util.Stack;
-
+//========================================================================================================
 class Room{
     int RMNO;
     String RMDESC;
@@ -47,7 +47,7 @@ class Room{
         System.out.println();
     }
 }
-
+//========================================================================================================
 public class StackMain {
     public static void main(){
         Scanner sc = new Scanner(System.in);
@@ -79,6 +79,7 @@ public class StackMain {
         }
     }
 }
+//========================================================================================================
 class StackOperations {
     public static void StackArrayOperations(){
         Scanner sc = new Scanner(System.in);
@@ -186,7 +187,7 @@ class StackOperations {
         }
         
     }
-    
+//========================================================================================================
 class StackClass{
         private Stack<Room> stack;
         
@@ -276,6 +277,7 @@ class StackClass{
             
     }
 }
+//========================================================================================================
 class Node{
     Room room;
     Node next;
@@ -285,7 +287,7 @@ class Node{
         next = null;
     }
 }
-
+//========================================================================================================
 class StackLinkedList{
     private Node top;
     private int size;
@@ -397,6 +399,7 @@ class StackLinkedList{
         }
     }
 }
+//========================================================================================================
 class StackArray {
     private Room[] stack;
     private int top;
@@ -456,7 +459,7 @@ class StackArray {
         }
     }
     
-    public static void main(String[] args){
+    public static void main(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter maximum size of the stack: ");
         int maxSize = sc.nextInt();

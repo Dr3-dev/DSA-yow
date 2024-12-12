@@ -1,7 +1,7 @@
 package dsaPROJECT;
 
 import java.util.Scanner;
-
+//========================================================================================================
 class ArrMain {
     public static void main() {
         Scanner scanner = new Scanner(System.in);
@@ -87,7 +87,7 @@ class ArrMain {
         }
     }
 }
-
+//========================================================================================================
 class OneDimensional {
 	public static Scanner scanner = new Scanner(System.in);
     static int[] RMNO;
@@ -186,6 +186,7 @@ class OneDimensional {
         System.out.println("Room deleted successfully!\n");
     }
 }
+//========================================================================================================
 class TwoDimensional {
 
     static Object[][] rooms;
@@ -268,6 +269,7 @@ class TwoDimensional {
         System.out.println("Room deleted successfully!\n");
     }
 }
+//========================================================================================================
 class SampleApplication {
 
     public static void viewReservations() {
